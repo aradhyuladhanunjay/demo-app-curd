@@ -1,1 +1,0 @@
-the file gives the complete description about the controller layer in the project.
