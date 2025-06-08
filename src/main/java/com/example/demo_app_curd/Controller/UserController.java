@@ -28,6 +28,7 @@ public class UserController {
     public ResponseEntity<User> savedetails(@RequestBody User user){
         int x=1000;
         char z='y';
+        String s1 = "abcd";
         int s=10;
         System.out.println("saving the user details in the DB");
 
