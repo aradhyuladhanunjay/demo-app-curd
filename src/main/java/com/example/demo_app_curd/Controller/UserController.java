@@ -28,6 +28,7 @@ public class UserController {
     public ResponseEntity<User> savedetails(@RequestBody User user){
         int x=1000;
         char z='y';
+        double d=10.32423;
         boolean status=true;
         String s1 = "abcd";
         int s=10;
