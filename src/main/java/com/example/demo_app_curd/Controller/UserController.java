@@ -33,7 +33,7 @@ public class UserController {
         String s1 = "abcd";
         int s=10;
         System.out.println("saving the user details in the DB");
-
+        System.out.println(d);
        User u=userService.savedetails(user);
        return new ResponseEntity<>(u, HttpStatus.CREATED);
     }
