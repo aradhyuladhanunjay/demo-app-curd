@@ -29,6 +29,7 @@ public class UserController {
         int x=1000;
         char z='y';
         boolean status=true;
+        String s1 = "abcd";
         int s=10;
         System.out.println("saving the user details in the DB");
 
