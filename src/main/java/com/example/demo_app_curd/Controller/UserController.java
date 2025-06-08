@@ -27,7 +27,9 @@ public class UserController {
     @PostMapping("/saveuserdetails")
     public ResponseEntity<User> savedetails(@RequestBody User user){
         int x=1000;
-        char z='t';
+        char z='y';
+        boolean status=true;
+        String s1 = "abcd";
         int s=10;
         System.out.println("saving the user details in the DB");
 
