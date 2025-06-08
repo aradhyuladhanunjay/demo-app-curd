@@ -1,5 +1,6 @@
 package com.example.demo_app_curd.Controller;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.example.demo_app_curd.DTO.UserDTO;
 import com.example.demo_app_curd.Entity.User;
 import com.example.demo_app_curd.Service.UserService;
@@ -25,6 +26,7 @@ public class UserController {
     //http://localhost:8080/api/user/controller/v1/saveuserdetails
     @PostMapping("/saveuserdetails")
     public ResponseEntity<User> savedetails(@RequestBody User user){
+        System.out.println("saving the user details in the DB");
        User u=userService.savedetails(user);
        return new ResponseEntity<>(u, HttpStatus.CREATED);
     }
