@@ -25,6 +25,8 @@ public class UserController {
     //http://localhost:8080/api/user/controller/v1/saveuserdetails
     @PostMapping("/saveuserdetails")
     public ResponseEntity<User> savedetails(@RequestBody User user){
+        int x=1000;
+        int s=3;
        User u=userService.savedetails(user);
        return new ResponseEntity<>(u, HttpStatus.CREATED);
     }
