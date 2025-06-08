@@ -27,6 +27,7 @@ public class UserController {
     public ResponseEntity<User> savedetails(@RequestBody User user){
         int x=1000;
         int s=100;
+        char z='r';
        User u=userService.savedetails(user);
        return new ResponseEntity<>(u, HttpStatus.CREATED);
     }
